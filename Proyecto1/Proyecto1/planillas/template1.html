@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Excelente!! Es una nueva plantilla.
+
+    <p style="color:red">Mi nombres es : {{nombre}}</p>
+    <p style="color:green">Mi apellido es : {{apellido}}</p>
+
+    <h1 style="color: aqua">
+
+        Este template fue creado el: {{hoy}}
+
+    </h1>
+
+    <h2>
+
+        Este template fue creado el: {{hoy}}
+
+    </h2>
+
+    <p>
+        {% for n in notas %}
+
+            {% if n < 6 %}
+                <p style="color:red"> DESAPROBADO: {{n}} </p>
+            {% else %}
+                <p style="color:green"> APROBADO: {{n}} </p>
+            {% endif %}
+            <br>
+
+        {% endfor %}
+
+    </p>
+</body>
+</html>
